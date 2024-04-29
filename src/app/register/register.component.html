@@ -1,0 +1,16 @@
+<form [formGroup]="registerForm" (submit)="createUser()">
+
+  <label for="name">Name</label>
+  <input id="name" type="text" formControlName="name" />
+
+  <label for="organization">Organization</label>
+  <input id="organization" type="text" formControlName="organization" />
+
+  <label for="email">Email</label>
+  <input id="email" type="text" formControlName="email" />
+
+  <label for="password">Password</label>
+  <input id="password" type="password" formControlName="password" />
+
+  <button type="submit" class="primary">Sign up</button>
+</form>
